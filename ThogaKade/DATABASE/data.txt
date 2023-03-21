@@ -1,0 +1,34 @@
+7..*
+Superkeys:Studet Id,NIC,EMail
+Primary:stID
+ALternate Keys:NIC,EMAil
+
+one supervisor supervises atleast zero supervisee.
+one supervisor supervises atmost ten supervisees.
+one Staff member registers atleast zero clients.
+one Staff member manages atleast zero property for rent
+
+......................................................................
+
+Tute 01:
+
+One Computer is may not assigned to a computer lab .
+A Computer can only be assigned to a one computer lab.
+A Computer lab should contain at least one computer 
+A Computer lab may contain maby computers
+
+One product may not include in any order
+one order includes at least one product
+one order can include many products
+one product 
+
+
+one staff member is allocated upto 3 laptops
+one staff
+
+
+products
+customers
+order
+ 
+ 

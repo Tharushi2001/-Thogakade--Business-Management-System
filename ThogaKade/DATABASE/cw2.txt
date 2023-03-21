@@ -1,0 +1,42 @@
+DROP TABLE IF EXISTS w1907403_Customer;
+DROP TABLE IF EXISTS w1907403_Oneoff_Payment;
+CREATE TABLE w1907403_Customer
+(
+w1907403_custNo INTEGER,
+
+w1907403_custSurname VARCHAR(20) NOT NULL,
+w1907403_custEmail VARCHAR(20) NOT NULL,
+w1907403_custMobileNo VARCHAR(20) NOT NULL,
+CONSTRAINT cus_no_pk PRIMARY KEY (w1907403_custNo)
+
+);
+
+
+CREATE TABLE w1907403_oneoff_Payment
+(
+w1907403_paymentRefNo INTEGER NOT NULL,
+w1907403_paymentDate DATE NOT NULL,
+w1907403_paymentAmount DECIMAL(7,2) NOT NULL,
+w1907403_custNo INTEGER NOT NULL,
+CONSTRAINT O_ref_pk PRIMARY KEY (w1907403_paymentRefNo),
+CONSTRAINT  O_no_fk FOREIGN KEY (w1907403_custNo) REFERENCES w1907403_Customer(w1907403_custNo)
+
+);
+
+SELECT C.custName, C.custSurname,C.custEmail,C.custMobileNO,O.paymentRefNo,O.paymentAmount
+FROM Customer C
+INNER JOIN Oneoff_Payment O
+ON C.custNo=O.custNo
+WHERE C.custSurname LIKE 'Pat' AND O.paymentAmount < '80'
+
+
+
+INSERT INTO 
+Oneoff_Payment
+(paymentRefNo,paymentDate,paymentAmount,custNo)
+VALUES
+(2,'2021-03-06',97.00, 102);
+
+SELECT * FROM Oneoff_Payment;
+
+

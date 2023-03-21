@@ -1,0 +1,72 @@
+SQL statement
+
+SELECT * FROM Countries WHERE Continent = 'Europe';
+
+-----------------------------------------------------------------------------------------------------
+
+CRUD
+
+CREATE
+READ
+UPDATE
+DELETE
+-----------------------------------------------------------------------------
+
+SELECT
+
+SELECT * FROM Customer;
+--------------------------------------------
+INSERT
+
+INSERT INTO Customer (name, city, state)
+VALUES ('Jimi Hendrix' , 'Renton', 'WA');
+-----------------------------------------
+
+UPDATE
+
+UPDATE Customer
+SET
+Address='123 Music Avenue',
+Zip = '98056'
+WHERE id=5;
+
+-----------------------------------------
+
+DELETE
+
+DELETE FROM Customer WHERE id=4;
+-----------------------------------
+
+SELECT * FROM country ORDER BY Name;
+
+SELECT Name , LifeExpectancy FROM Country BY Name;
+--------------------------------------------------
+
+SELECT Name, Continent , Region FROM Country WHERE Continent='Europe' ORDER BY Name ;
+
+------------------------------------------------------------------
+
+Selecting Columns
+
+SELECT Region, Continent, Name AS Country FROM Country;
+---------------------------------------------------------------
+
+Counting rows
+
+SELECT COUNT(*) FROM Country;
+SELECT COUNT (*) FROM Country WHERE Population >1000;
+------------------------------------------------------------
+
+SELECT * FROM customer;
+
+INSERT INTO customer (name, address , city , state, zip)
+ VALUES ('Fred Flington','123 Colombo', 'Galle','CA', '9128');
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<studentList>
+<student id="1">
+<name>Tharushi</name>
+<age>21</age>
+<marks>89</marks>
+</student>
+
+<student id="2">
+<name>saman</name>
+<age>21</age>
+<marks>56</marks>
+</student>
+
+</studentList>
